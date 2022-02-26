@@ -4,18 +4,23 @@ sidebar_position: 1
 
 # 文件操作
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## 创建 编辑 查看
+```
+touch 123.py    // 当前目录创建123.py文件
+mkdir 123       // 创建名为123目录
+vi 123.py       // 编辑123.py
+cat 123.py      // 命令行输出123.py的内容
+```
+- [vi具体操作](https://www.runoob.com/linux/linux-vim.html)
+## 移动文件或文件夹
+```
+mv {{源文件}} {{目标目录}}
+```
 
-Docusaurus has **much more to offer**!
+## 删除操作
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
-
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
-
-## What's next?
-
-- Read the [official documentation](https://docusaurus.io/).
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+```
+rm 1.txt    // 删除单个文件
+rm -r file  // 删除file目录
+rm -rf file // 删除file目录(无需确认)
+```
