@@ -70,8 +70,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'start',
-                to: '/docs/start',
+                label: 'home',
+                to: '/',
+              },
+              {
+                label: 'Win10系统安装',
+                to: '/docs/computer/installationSystem/windows',
               },
             ],
           },
@@ -83,22 +87,42 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'docs',
-                to: '/docs/start',
-              },
-              {
                 label: 'GitHub',
                 href: GithubUrl,
               },
             ],
           },
+          {
+            title: '友链',
+            items: [
+              {
+                label: 'npm',
+                href: 'https://www.npmjs.com/',
+              },
+              {
+                label: 'webpack',
+                href: 'https://webpack.docschina.org/',
+              },
+              {
+                label: 'docusaurus',
+                href: 'https://www.docusaurus.cn',
+              },
+            ],
+          },
         ],
-        copyright: ` © ${new Date().getFullYear()} vimjs.com <a href="https://beian.miit.gov.cn" target="_blank">备案中</a>`,
+        copyright: ` © ${new Date().getFullYear()} vimjs.com <a href="https://beian.miit.gov.cn" target="_blank">备案中</a> <br/>  update ${new Date().toLocaleString()}`,
+        logo: { alt: 'vimjs.com' },
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      metadata: [
+        {
+          name: 'keywords',
+          content: '编程教程, blog, 魔法上网, 系统安装, yarn, npm',
+        },
+      ],
     }),
 };
 
