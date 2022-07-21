@@ -1,41 +1,34 @@
 ---
 sidebar_position: 6
 ---
-
-# npm,yarn
-
-## 查看配置
+## 查看版本
+```
+npm -v 
+```
 ## 更换源
-
-### npm
-- 查看源
-``` 
-npm config get registry 
 ```
-
-- 更换原厂源
-``` 
-npm config set registry https://registry.npmjs.org 
+npm config set registry https://registry.npmmirror.com
 ```
-
-- 更换淘宝源
-``` 
-npm config set registry https://registry.npm.taobao.org 
+## 参数
 ```
-
-### yarn
-- 安装yarn
+-g： 为 --global 的缩写，表示安装到全局目录里
+-S： 为 --save 的缩写，表示安装的包将写入package.json里面的dependencies
+-D： 为 --save-dev 的缩写，表示将安装的包将写入packege.json里面的devDependencies
+ i： 为install的缩写，表示安装
 ```
-npm install -g yarn
+## 安装模块
 ```
-- 查看版本
+npm init # 当前目录初始化为包
+npm i # 安装所有包
+npm i webpack # 安装webpack到当前包
 ```
-yarn --version
+## 卸载模块
 ```
-- 更换源
+npm uninstall webpack # 卸载webpack
 ```
-yarn config set registry https://registry.npm.taobao.org -g
+## 更新模块
 ```
-
-
+npm update webpack # 更新webpack
+npm update webpack@1.0.0 # 更新webpack指定版本
+```
 ## 提交包至npm

@@ -1,6 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+const GithubUrl = 'https://github.com/github262302';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'github262302', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   presets: [
@@ -23,8 +23,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -43,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'vimjs.com',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -57,7 +57,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/github262302',
+            href: GithubUrl,
             label: 'GitHub',
             position: 'right',
           },
@@ -77,36 +77,23 @@ const config = {
           },
           {
             title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            items: [],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'docs',
+                to: '/docs/start',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: GithubUrl,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: ` © ${new Date().getFullYear()} vimjs.com <a href="https://beian.miit.gov.cn" target="_blank">备案中</a>`,
       },
       prism: {
         theme: lightCodeTheme,
