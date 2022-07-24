@@ -4,14 +4,12 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
     {
-        title: "简单使用",
+        title: "简单方便",
         Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-        description: (
-            <>Docusaurus从头开始设计，易于安装，用于快速启动和运行您的网站.</>
-        ),
+        description: <>Docusaurus从头开始设计，易于阅读.</>,
     },
     {
-        title: "关注重要的事情",
+        title: "简单阅读",
         Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
         description: (
             <>
@@ -27,7 +25,7 @@ const FeatureList = [
         description: (
             <>
                 通过重用React扩展或自定义网站布局。
-                Docusaurus可以扩展，同时重用相同的头和 页脚.
+                Docusaurus可以扩展相同的头部和页脚.
             </>
         ),
     },

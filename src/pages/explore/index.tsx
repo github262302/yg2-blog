@@ -2,21 +2,26 @@ import React from "react";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import PropTypes from "prop-types";
-const ExploreLayout = props => {
+import clsx from "clsx";
+function ExploreLayout(props): React.ReactElement {
     return <div className={styles.main}>{props.children}</div>;
-};
-type CardType = {
+}
+type CardType<T> = {
     title: string;
     describe: string;
     img: string;
     to: string;
+    user?: T;
 };
-const Card = (props: CardType) => {
+function Card<T>(props: CardType<T>): React.ReactElement {
     return (
-        <a className={styles.card} href={props.to} target="_blank">
+        <a
+            className={clsx("hero", styles.card)}
+            href={props.to}
+            target="_blank">
             <img src={props.img} alt="" />
-            <h1>{props.title}</h1>
-            <h6 style={{ fontSize: "12px" }}>
+            <h3>{props.title}</h3>
+            <div style={{ fontSize: "12px" }}>
                 <div>
                     <svg
                         height="16"
@@ -32,11 +37,11 @@ const Card = (props: CardType) => {
                     </svg>
                 </div>
                 <div>Star 1432</div>
-            </h6>
-            <h6>{props.describe}</h6>
+            </div>
+            <p>{props.describe}</p>
         </a>
     );
-};
+}
 // class Card extends React.Component {
 //     render() {
 //         return <div className={styles.card}>Hello, {this.props.title}</div>;
@@ -44,7 +49,7 @@ const Card = (props: CardType) => {
 // }
 const DATA = [
     {
-        title: "webpack",
+        title: "Webpack",
         describe:
             "webpack 是一个用于现代 JavaScript 应用程序的 静态模块打包工具。",
         img: "https://t8.baidu.com/it/u=782949885,597946881&fm=74&app=80&size=f256,256&n=0&f=JPEG&fmt=auto?sec=1658682000&t=d14bf907cd6cca2ec28e3c74926783be",
@@ -76,7 +81,7 @@ export default () => {
         <Layout>
             <ExploreLayout>
                 {DATA.map(e => (
-                    <Card {...e} />
+                    <Card<any> {...e} />
                 ))}
             </ExploreLayout>
         </Layout>

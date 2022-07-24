@@ -56,6 +56,7 @@ const config = {
                         label: "文档",
                     },
                     { to: "/explore", label: "探索", position: "left" },
+                    { to: "/blog", label: "博客", position: "left" },
                     {
                         href: GithubUrl,
                         label: "GitHub",

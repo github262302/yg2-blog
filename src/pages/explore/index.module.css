@@ -31,21 +31,25 @@
 }
 .card:hover {
     text-decoration: none;
+    color: initial;
 }
 .card > :nth-child(1) {
     width: 180px;
     height: 128px;
 }
+.card > :nth-child(2) {
+    /* font-size:var(--ifm-h3-font-size) */
+}
 .card > :nth-child(3) {
-    color: red;
+    
     display: flex;
     align-items: center;
     font-size: 8px;
     justify-content: center;
     gap: 4px;
 }
-.card > :nth-child(4) {
-    color:rgb(37, 37, 37) ;
+.card > :nth-child(4):hover {
+/* color: initial; */
 }
 @media (max-width: 1200px) {
     .main {

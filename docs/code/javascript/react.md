@@ -1,21 +1,21 @@
-## 主程序代码 Demo
+## 主程序代码示例
 
 ```jsx
 // index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 const App = () => {
-  return <div>123</div>;
+    return <div>123</div>;
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
 ```
 
 ```html
 <!-- index.html  -->
 <body>
-  <div id="app"></div>
+    <div id="app"></div>
 </body>
 ```
 

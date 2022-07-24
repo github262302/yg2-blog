@@ -1,4 +1,4 @@
-```json
+```json title="webpack.config.js"
 import path from 'path';
 import webpack, { node } from 'webpack';
 import CopyPlugin from "copy-webpack-plugin";
